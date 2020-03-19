@@ -22,7 +22,7 @@ Bootstrap 사용시 Custom이 필요한 경우에만 css를 쓰게 된다. -> Cu
     
     body {
         /* 구역 내부에 공간 주는 경우 */
-        padding-bottom: 100px;
+        margin-bottom: 100px;
     }
     /* 가로 폭에 따라 다르게 처리하고 싶은 경우 (모바일 대응시 필요) */
     
@@ -46,7 +46,7 @@ Bootstrap 사용시 Custom이 필요한 경우에만 css를 쓰게 된다. -> Cu
     }
     
     .carousel-item {
-        /* height : 폭 결정 */
+        /* height : 높이 결정 */
         height: 500px;
     }
     /* 특정 구역 내부의 것에 대해서만 설정하고자 할 때 */
