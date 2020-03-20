@@ -98,3 +98,5 @@ function addWishlist() {
 function moveToWishList() {
     window.location.href = "http://naver.com";
 }
+// 하지만 새로고침을 한다면? 다시 돌아옵니다.
+// 유지시키려면 -> 백엔드 개발과 DB 필요!
