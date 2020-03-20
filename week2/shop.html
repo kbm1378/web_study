@@ -114,7 +114,32 @@
             </div>
             <div class="button-wrapper">
                 <!-- js action을 위한 id 선택자 지정 -->
-                <button onClick="submitOrder()" type="button" class="btn btn-primary">주문하기</button>
+                <button id="button-wish" onclick="addWishlist()" type="button" class="btn btn-primary">♡</button>
+                <button onclick="submitOrder()" type="button" class="btn btn-primary">주문하기</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Advanced : 여러개 버튼 있는 커스텀 알람창 띄우고 싶은 경우 -> Bootstrap modal -->
+    <div class="modal fade" id="wishModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <!-- 제목 -->
+                    <h5 class="modal-title" id="exampleModalLabel">찜하였습니다!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+                </div>
+                <!-- 설명 -->
+                <div class="modal-body">
+                    찜 목록으로 이동하시겠습니까?
+                </div>
+                <div class="modal-footer">
+                    <!-- 버튼 -->
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">아니오</button>
+                    <button type="button" class="btn btn-primary" onclick="moveToWishList()">예</button>
+                </div>
             </div>
         </div>
     </div>

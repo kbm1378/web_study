@@ -2,6 +2,7 @@
 function submitOrder() {
     /* 
     1) 입력값에 대한 체크 작업을 "유효성 검사 (Input validation)" 이라 합니다. (ex: 빈칸 여부, 전화번호 포맷 체크)
+       input이 있다면 반드시 따라오는 작업입니다! 꼭 기억해두세요! (오늘 수업에서도 나옵니다.)
        추후 구글링시 빈번하게 활용될 수 있는 키워드이므로 기억해두세요! (구글링 해보기)
     2) 한편 이 작업을 아래처럼 isValidOrder 이라는 함수로 따로 뺄 수 도 있습니다. 이를 통한 이점은 
        a. 코드 가독성 개선입니다. 
@@ -80,4 +81,20 @@ function isValidPhoneNum(phone) {
         return false;
     }
     return true;
+}
+
+
+function addWishlist() {
+    let heart = $("#button-wish").text();
+    if (heart == '♥') {
+        alert('찜이 취소되었습니다.')
+        $("#button-wish").text('♡')
+    } else {
+        $('#wishModal').modal('toggle')
+        $("#button-wish").text('♥')
+    }
+}
+
+function moveToWishList() {
+    window.location.href = "http://naver.com";
 }
